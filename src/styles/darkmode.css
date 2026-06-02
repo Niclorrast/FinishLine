@@ -1,0 +1,98 @@
+/* =========================
+   BOTÓN DARK MODE
+========================= */
+
+.btn-darkmode {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-darkmode:hover {
+    background: #1f2937;
+}
+
+/* =========================
+   MODO OSCURO
+========================= */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+
+
+body.dark-mode .admin-main  {
+    background: #0f172a;
+}
+
+body.dark-mode .card,
+body.dark-mode .tabla,
+body.dark-mode .modal-content,
+body.dark-mode .ticket-card
+{
+    background: #1e293b;
+    color: white;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+}
+
+body.dark-mode table {
+    background: #1e293b;
+    color: white;
+}
+
+body.dark-mode .admin-titulo {
+    background: #1e293b;
+    color: white;
+}
+
+body.dark-mode th {
+    background: #334155;
+}
+
+body.dark-mode td {
+    border-color: #475569;
+    color: #f1f5f9;
+}
+body.dark-mode .admin-subtitulo {
+    color: #f1f5f9;
+}
+/* =========================
+   HOVER EN TABLA - MODO OSCURO
+========================= */
+
+body.dark-mode tr:hover td {
+    background: #2d3f55;
+    color: #ffffff;
+}
+
+body.dark-mode tr:hover {
+    background: #2d3f55;
+}
+
+/* Para que el texto dentro del hover también sea legible */
+body.dark-mode tr:hover td * {
+    color: #ffffff;
+}
+
+/* Email / subtexto dentro de la celda */
+body.dark-mode tr:hover td small,
+body.dark-mode tr:hover td span,
+body.dark-mode tr:hover td p {
+    color: #cbd5e1 !important;
+}

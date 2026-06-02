@@ -1,0 +1,212 @@
+/* BANNER */
+.qs-banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/imagen3.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.qs-banner-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.qs-banner-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* CONTENEDOR GENERAL */
+.qs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #00aaff;
+    margin: 15px 0 25px;
+}
+
+/* HISTORIA - ESTRUCTURA LADO A LADO */
+.qs-historia {
+    padding: 80px 0;
+}
+
+.qs-historia .qs-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.qs-texto {
+    flex: 1;
+}
+
+.qs-imagen {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ============================================
+   SOLUCIÓN DEFINITIVA CARRUSEL ALTURA FIJA
+   ============================================ */
+
+#carouselHistoria {
+    height: 500px !important;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+#carouselHistoria .carousel-inner {
+    height: 500px !important;
+    overflow: hidden;
+}
+
+#carouselHistoria .carousel-item {
+    height: 500px !important;
+    overflow: hidden;
+    max-height: 500px !important;
+}
+
+#carouselHistoria .carousel-item img {
+    width: 100% !important;
+    height: 500px !important;
+    max-height: 500px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    flex-shrink: 0;
+}
+
+/* ============================================ */
+
+/* Ajuste de los textos dentro de las fotos (Captions) */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    bottom: 20px;
+}
+
+.qs-texto h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.qs-texto p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* MISIÓN */
+.qs-mision {
+    background-color: #f4f8fb;
+    padding: 80px 0;
+}
+
+.qs-mision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.qs-mision-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+/* POR QUÉ ELEGIRNOS */
+.qs-elegir {
+    padding: 80px 0;
+}
+
+.qs-elegir-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.qs-elegir-card {
+    background: #f4f8fb;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qs-elegir-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* EQUIPO */
+.qs-equipo {
+    background-color: #f4f8fb;
+    padding: 80px 0;
+}
+
+.qs-equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.qs-equipo-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+.qs-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.qs-icon {
+    font-size: 2.5rem;
+}
+
+/* RESPONSIVE - MÓVILES */
+@media (max-width: 992px) {
+    .qs-historia .qs-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .divider {
+        margin: 15px auto 25px;
+    }
+
+    #carouselHistoria,
+    #carouselHistoria .carousel-inner,
+    #carouselHistoria .carousel-item,
+    #carouselHistoria .carousel-item img {
+        height: 350px !important;
+        max-height: 350px !important;
+    }
+
+    .qs-banner-content h1 {
+        font-size: 2rem;
+    }
+}

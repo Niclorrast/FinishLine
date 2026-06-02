@@ -1,0 +1,66 @@
+/* Contenedor del formulario */
+.presupuesto-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Etiquetas (Labels) */
+.presupuesto-form label {
+    font-weight: 600;
+    color: #1a2a3a;
+    margin-bottom: -10px;
+    font-size: 0.95rem;
+}
+
+/* Inputs, Selects y Textareas */
+.presupuesto-form input, 
+.presupuesto-form select, 
+.presupuesto-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efecto al hacer clic en los campos */
+.presupuesto-form input:focus, 
+.presupuesto-form select:focus, 
+.presupuesto-form textarea:focus {
+    border-color: #00d4ff; /* El azul turquesa de tu logo */
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
+}
+
+/* Estilo específico para el área de texto */
+.presupuesto-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* El botón de enviar */
+.presupuesto-form .btn-cta-final {
+    background: #00d4ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.presupuesto-form .btn-cta-final:hover {
+    background: #00a8cc;
+}
